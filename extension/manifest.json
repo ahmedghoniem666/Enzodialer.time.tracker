@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Enzo Monitor Agent",
+  "version": "1.0.0",
+  "description": "Send active tab + heartbeats to Enzo Monitor (requires user consent)",
+  "permissions": ["tabs","alarms","storage","scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html" }
+}
